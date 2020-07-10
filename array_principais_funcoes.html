@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Hacky(Aula 15) - JavaScript</title>
+		<meta charset="utf-8">
+
+		<script>
+
+			"use strict"
+
+			let bag = [], bag1 = [],bag2 = []
+
+			bag1.push("Faca")
+
+			bag1.unshift("Pedra")
+
+			bag2.push("Arame")
+
+			bag.pop() //Remove do Final
+			bag.shift() //Remove do Inicio
+			bag.splice(2, 1) //Remove da Posiçao indicada .splice(primeiro item a ser removido, quantos itens abaixo vão ser removidos)
+
+			bag = bag1.concat(bag2)
+
+			document.write(`${bag[0]}<br>`)
+			document.write(`${bag[1]}<br>`)
+			document.write(`${bag[2]}<br>`)
+			document.write(bag.indexOf("Pedra"))
+			document.write("<br>")
+
+			document.write(`Tamanho da Mochila 1: ${bag1.length} Itens<br>`)
+			document.write(`Tamanho da Mochila 2: ${bag2.length} Itens<br>`)
+			document.write(`Tamanho Total das Mochilas: ${bag.length} Itens<br>`)
+			
+			
+			//position = bag.indexOf("Pedra")
+
+			//if(position < 0){
+			//	document.write("Item Não Encontrado!<br>")
+			//}
+			//else{
+			//	document.write(`O item esta na Posição: ${position}`)
+			//}
+			
+			
+/*
+			let num = [3, 4, 7, 2, 5, 1, 9, 0, 6, 8]
+			let numbers
+
+			num.sort()
+			num.reverse()
+
+			numbers = num.join()
+			document.write(`${numbers}<br>`)
+
+			document.write(`${num[0]}<br>`)
+			document.write(`${num[1]}<br>`)
+			document.write(`${num[2]}<br>`)
+			document.write(`${num[3]}<br>`)
+			document.write(`${num[4]}<br>`)
+			document.write(`${num[5]}<br>`)
+			document.write(`${num[6]}<br>`)
+			document.write(`${num[7]}<br>`)
+			document.write(`${num[8]}<br>`)
+			document.write(`${num[9]}<br>`)
+			document.write(num.indexOf(5))
+			*/
+
+		</script>
+	</head>
+
+	<body>
+
+	</body>
+</html>

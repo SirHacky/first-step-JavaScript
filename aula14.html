@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Hacky(Aula 14) - JavaScript</title>
+		<meta charset="utf-8">
+
+		<script>
+			"use strict"
+
+			let bag = []
+
+			bag.push("Faca")
+			bag.push("Corda")
+			bag.push("Pederneira")
+			bag.push("Chave")
+			bag.push("Lanterna") //Add no final do array
+			bag.unshift("Pedra") //Add no incio do Array
+
+			bag.pop() //Remove do Final
+			bag.shift() //Remove do Inicio
+			bag.splice(2, 1) //Remove da Posiçao indicada .splice(primeiro item a ser removido, quantos itens abaixo vão ser removidos)
+
+			document.write(`${bag[0]}<br>`)
+			document.write(`${bag[1]}<br>`)
+			document.write(`${bag[2]}<br>`)
+			document.write(`${bag[3]}<br>`)
+			document.write(`${bag[4]}<br>`)
+			document.write(`${bag[5]}<br>`)
+
+
+		</script>
+	</head>
+
+	<body>
+
+	</body>
+</html>

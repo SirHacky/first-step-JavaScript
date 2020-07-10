@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Hacky(1st QUIZ) - JavaScript</title>
+		<meta charset="utf-8">
+
+		<script>
+			
+			"use strict"
+
+			let points = 5
+			const first_question = `Qual Atual Presidente do Brasil?
+    A) Jair Bolsonaro
+    B) Lula
+    C) Fernando Henrique Cardoso
+    D) Getulio Vargas`
+
+			const first_answer = prompt(first_question, "Escolha A, B, C ou D").toUpperCase()
+
+			if (first_answer === "A") {
+    			alert("Você acertou!!!")
+    			alert(`Agora você tem ${points + 1} pontos`)
+			} 	
+			else {
+    			alert("Você errou!!!")
+    			alert(`Total de pontos: ${points}`)
+			}
+			
+		</script>
+	</head>
+
+	<body>
+
+	</body>
+</html>
